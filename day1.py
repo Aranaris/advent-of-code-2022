@@ -36,6 +36,7 @@ with open(os.path.join(sys.path[0], "day1input.txt"), 'r') as f:
                 topthreeelves[1] = topthreeelves[0]
         elif thirdelf <= elfcalories[elfcounter]:
             thirdelf = elfcalories[elfcounter]
+            topthreeelves[2] = elfcounter
 
     print(elfcalories)
     print(maxelf)
